@@ -1,1 +1,21 @@
 
+#slidernbt {
+clear: both;
+position:relative;
+background: #000 url(https://2.bp.blogspot.com/-hzM4lWpwMCM/V4RchNhj4aI/AAAAAAAASp0/bZ51Nrlq6aUv9hXoIhg-aFSJpuFZHHeywCLcB/s1600/loading.gif) no-repeat 50% 50%;
+width: 960px;
+height: 390px !important;
+margin: 7px auto 9px;
+}
+#slidernbt .slidedesc {
+font-size: 12px;
+margin: 0px 0 0 0px;
+padding:0;
+color:#565656 !important;
+}
+.slidetit {
+font-size: 15px;
+color: #fff;
+margin-bottom: 0px;
+display: block;
+}

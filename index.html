@@ -1,45 +1,37 @@
-<HTML>
-<HEAD>
-<TITLE></TITLE>
+<DOCTYPE html>
 
-
-<SCRIPT Language="JavaScript">
-<!--
-// Valor工作室小誌 [valor Studio]
-var speed = 5000  //圖片切換時間
-var img= new Array()
-var url= new Array()
-var current = 0
-//一張圖片對應一個網址,可無限增加,編號由0開始
-img[0] = new Image(); img[0].src = "icon1.gif";	url[0] = "https://cdn.yamaha-motor.eu/product_assets/2016/YZF1000R1/950-75/2016-Yamaha-YZF-R1-EU-Race-Blu-VR360-019.jpg" 
-img[1] = new Image(); img[1].src = "icon2.gif";	url[1] = "https://cdn.yamaha-motor.eu/product_assets/2016/YZF1000R1/950-75/2016-Yamaha-YZF-R1-EU-Race-Blu-VR360-035.jpg"
-img[2] = new Image(); img[2].src = "icon3.gif";	url[2] = "http://gb.twbts.com"
-img[3] = new Image(); img[3].src = "icon4.gif";	url[3] = "http://www.twbts.com/"
-
-
-function start() 
-{
-current++
-if(current >=img.length) current = 0
-document.imgs.src = img[current].src
-setTimeout("start()",speed);
-}
-
-function go() 
-{window.location = url[current]}
-//-->
-</SCRIPT>
-
-
-</HEAD>
-
-
-<BODY onLoad="setTimeout('start()',speed);">
-
-
-<a href="javascript:go()"><img src="icon1.gif" name="imgs"></a>
-
-
-
-</BODY>
-</HTML>
+<html lang="zh-Hant">
+  <head>
+    
+    <!--css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <!--css end-->
+    <!--JS-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="./js/jquery.cycle.lite.js"></script>
+    <!--JS end-->
+    <!--JS picture auto change-->
+    <script type="text/javascript">
+ jQuery(document).ready(function($) {   
+$('#slider').cycle({   
+          fx:    'fade',  //特效
+          speed:  7500,
+          timeout:  7200,
+          random:  1
+         });
+ }); </script>
+    <!--JS picture auto change-->
+  </head>
+  
+  
+  <body>
+    
+    <!--pictures auto change-->
+    <div id='slider'>
+      <div class="show1"></div>
+      <div class="show2"></div>
+    </div>
+    <!--pictures auto change end-->
+    
+  </body>
+</html>

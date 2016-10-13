@@ -1,55 +1,45 @@
-<!DOCTYPE html>
-  <html>
-    <head>
-      <!--css -->
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <link type='text/javascript'>  
-    
-    
-      <script type='text/javascript'>
-//<![CDATA[
+<HTML>
+<HEAD>
+<TITLE></TITLE>
 
-jQuery(document).ready(function($) {
 
-$(window).load(function() {
-	$('#slidernbt').nivoSlider({
-		effect:'random', //Specify sets like: 'fold,fade,sliceDown'
-		slices:20,
-		animSpeed:900,
-		pauseTime:4000,
-		startSlide:0, //Set starting Slide (0 index)
-		directionNav:false, //Next & Prev
-		directionNavHide:false, //Only show on hover
-		controlNav:true, //1,2,3...
-        controlNavThumbs:false, //Use thumbnails for Control Nav
-        controlNavThumbsFromRel:false, //Use image rel for thumbs
-		keyboardNav:true, //Use left & right arrows
-		pauseOnHover:true, //Stop animation while hovering
-		manualAdvance:false, //Force manual transitions
-		captionOpacity:0.8 //Universal caption opacity
-	});
-});
+<SCRIPT Language="JavaScript">
+<!--
+// Valor工作室小誌 [valor Studio]
+var speed = 5000  //圖片切換時間
+var img= new Array()
+var url= new Array()
+var current = 0
+//一張圖片對應一個網址,可無限增加,編號由0開始
+img[0] = new Image(); img[0].src = "icon1.gif";	url[0] = "https://cdn.yamaha-motor.eu/product_assets/2016/YZF1000R1/950-75/2016-Yamaha-YZF-R1-EU-Race-Blu-VR360-019.jpg" 
+img[1] = new Image(); img[1].src = "icon2.gif";	url[1] = "https://cdn.yamaha-motor.eu/product_assets/2016/YZF1000R1/950-75/2016-Yamaha-YZF-R1-EU-Race-Blu-VR360-035.jpg"
+img[2] = new Image(); img[2].src = "icon3.gif";	url[2] = "http://gb.twbts.com"
+img[3] = new Image(); img[3].src = "icon4.gif";	url[3] = "http://www.twbts.com/"
 
-});
 
-//]]>
-</script>   
-      
-    </head>  
-      <body>
-      
-      <!-- slider start -->
-<div id='slidernbt'>
-  <a href='http://www.besonicdesign.com/2016/09/yamaha-yzf-r3-rearsets-raiser.html'><img src='https://cdn.yamaha-motor.eu/product_assets/2016/YZF1000R1/950-75/2016-Yamaha-YZF-R1-EU-Race-Blu-VR360-035.jpg' title='Yamaha YZF-R1'/></a>
-<a href='http://www.besonicdesign.com/2016/09/yamaha-yzf-r3-upper-triple-clamps.html'><img src='https://cdn.yamaha-motor.eu/product_assets/2016/YZF1000R1/950-75/2016-Yamaha-YZF-R1-EU-Race-Blu-VR360-019.jpg' title='Yamaha YZF-R3'/></a>
-</div>
-<!-- slider end -->
-      
-      
-      
-    </body>
-      
-    
-    
-    
-  </html>
+function start() 
+{
+current++
+if(current >=img.length) current = 0
+document.imgs.src = img[current].src
+setTimeout("start()",speed);
+}
+
+function go() 
+{window.location = url[current]}
+//-->
+</SCRIPT>
+
+
+</HEAD>
+
+
+<BODY onLoad="setTimeout('start()',speed);">
+
+
+<a href="javascript:go()"><img src="icon1.gif" name="imgs"></a>
+
+
+
+</BODY>
+</HTML>

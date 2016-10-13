@@ -10,7 +10,7 @@
 }
 
 .show1{
-  background:url("https://cdn.yamaha-motor.eu/product_assets/2016/YZF1000R1/950-75/2016-Yamaha-YZF-R1-EU-Race-Blu-VR360-019.jpg");
+  background:url("https://cdn.yamaha-motor.eu/product_assets/2016/YZF1000R1/950-75/2016-Yamaha-YZF-R1-EU-Race-Blu-VR360-019.jpg") no-repeat scroll 0 0 transparent;
   padding:0;
   height:450px;
   width:600px;
@@ -18,7 +18,7 @@
   left:0;
 }
 
-.show2{background:url("https://cdn.yamaha-motor.eu/product_assets/2016/YZF1000R1/950-75/2016-Yamaha-YZF-R1-EU-Race-Blu-VR360-035.jpg");
+.show2{background:url("https://cdn.yamaha-motor.eu/product_assets/2016/YZF1000R1/950-75/2016-Yamaha-YZF-R1-EU-Race-Blu-VR360-035.jpg") no-repeat scroll 0 0 transparent;
   padding:0;
   height:450px;
   width:600px;

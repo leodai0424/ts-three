@@ -13,7 +13,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   width: 960px;
-  min-height: 700px;
+  max-height: 700px;
   /*background-color:pink;*/
   /*border: 1px solid white;*/
 }
@@ -61,12 +61,13 @@ div.icon{
 }
 img.icon{
   margin-top: 15px;
-  margin-right: 10px;    
+  margin-right: 10px; 
+  
 }
 
 img.slide{
   margin-top:20px;
-  margin-bottom:200px;
+  margin-bottom:100px;
 }
 
 div.footer{

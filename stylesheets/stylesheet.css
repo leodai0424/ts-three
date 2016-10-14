@@ -22,7 +22,7 @@ body{
   margin-top:80px;
 }
 
-.line1{
+.line1, .line3{
   margin-right:auto;
   margin-left:auto;
   width:550px;
@@ -33,13 +33,7 @@ body{
   height:1px;
   background-color:white;
 }
-.line3{
-  margin-right:auto;
-  margin-left:auto;
-  width:550px;
-  height:1px;
-  background-color:white;
-}
+
 
 div.top{
   width: 100%;

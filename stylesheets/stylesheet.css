@@ -170,17 +170,3 @@ div.footer{
     -webkit-transition: all 0.5s ease-in-out;
             transition: all 0.5s ease-in-out;
 }
-
-.slider_container:hover span {
-    width: 100%;
-    -webkit-transform:scaleY(1);
-        -ms-transform:scaleY(1);
-            transform:scaleY(1);
-}
-
-.slider_container:hover div {
-    -webkit-animation-play-state: paused;
-            animation-play-state: paused;
-}
-
-
